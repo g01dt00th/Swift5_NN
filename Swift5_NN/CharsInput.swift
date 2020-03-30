@@ -237,13 +237,13 @@ func StringToBytes(str: String) -> [String] {
     return keyArray
 }
 
-func StringHexArrToIntArr(str: [String]) -> [UInt64] {
-    var intArray = [UInt64]()
+func StringHexArrToIntArr(str: [String]) -> [Int] {
+    var intArray = [Int]()
 
     str.forEach{
         var value: UInt64 = 0
         Scanner(string: $0).scanHexInt64(&value)
-        intArray.append(value)
+        intArray.append(Int(value))
     }
     return intArray
 }
