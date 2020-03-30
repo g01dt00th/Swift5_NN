@@ -237,7 +237,7 @@ func StringToBytes(str: String) -> [String] {
     return keyArray
 }
 
-func StringHexArrToIntArr(str: String) -> [UInt64] {
+func StringHexArrToIntArr(str: [String]) -> [UInt64] {
     var intArray = [UInt64]()
 
     str.forEach{
